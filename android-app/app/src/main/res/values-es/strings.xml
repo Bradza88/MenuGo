@@ -1,0 +1,33 @@
+<resources>
+    <string name="welcome_message">Bienvenido a MenuGo</string>
+    <string name="welcome_description">Explora el menú y realiza tu pedido para retirar.</string>
+
+    <string name="nav_home">Inicio</string>
+    <string name="nav_menu">Menú</string>
+    <string name="nav_cart">Carrito</string>
+    <string name="nav_branches">Sucursales</string>
+
+    <string name="search_products">Buscar productos</string>
+    <string name="filters">Filtros</string>
+    <string name="category">Categoría</string>
+    <string name="min_price">Precio mínimo</string>
+    <string name="max_price">Precio máximo</string>
+    <string name="only_promotions">Solo promociones</string>
+    <string name="apply_filters">Aplicar filtros</string>
+    <string name="clear_filters">Limpiar filtros</string>
+
+    <string name="product_details">Detalle del producto</string>
+    <string name="add_to_cart">Agregar al carrito</string>
+    <string name="quantity">Cantidad</string>
+    <string name="total">Total</string>
+    <string name="select_branch">Seleccionar sucursal de retiro</string>
+    <string name="confirm_order">Confirmar pedido</string>
+
+    <string name="cancel">Cancelar</string>
+    <string name="back">Volver</string>
+
+    <plurals name="cart_item_count">
+        <item quantity="one">%1$d artículo en tu carrito</item>
+        <item quantity="other">%1$d artículos en tu carrito</item>
+    </plurals>
+</resources>
