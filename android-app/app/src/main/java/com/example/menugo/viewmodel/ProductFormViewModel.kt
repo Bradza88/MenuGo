@@ -29,6 +29,7 @@ data class ProductFormUiState(
     val isOnPromotion: Boolean = false,
     val isAvailable: Boolean = true,
     val isEditing: Boolean = false,
+    val canSave: Boolean = true,
     val error: ProductFormError? = null,
     val isSaved: Boolean = false
 )
@@ -45,9 +46,7 @@ class ProductFormViewModel(
             val product = repository.getProductById(productId)
 
             if (product == null) {
-                _uiState.value = _uiState.value.copy(
-                    error = ProductFormError.PRODUCT_NOT_FOUND
-                )
+                resetForMissingProduct()
                 return
             }
 
@@ -60,13 +59,23 @@ class ProductFormViewModel(
                 imageUri = product.imageUri.orEmpty(),
                 isOnPromotion = product.isOnPromotion,
                 isAvailable = product.isAvailable,
-                isEditing = true
+                isEditing = true,
+                canSave = true
             )
         } catch (exception: Exception) {
-            _uiState.value = _uiState.value.copy(
-                error = ProductFormError.PRODUCT_NOT_FOUND
-            )
+            resetForMissingProduct()
         }
+    }
+
+    fun startNewProduct() {
+        _uiState.value = ProductFormUiState()
+    }
+
+    private fun resetForMissingProduct() {
+        _uiState.value = ProductFormUiState(
+            canSave = false,
+            error = ProductFormError.PRODUCT_NOT_FOUND
+        )
     }
 
     fun updateName(value: String) {
@@ -99,6 +108,11 @@ class ProductFormViewModel(
 
     fun saveProduct() {
         val form = _uiState.value
+
+        if (!form.canSave) {
+            setError(ProductFormError.PRODUCT_NOT_FOUND)
+            return
+        }
 
         if (!ProductValidationUtils.validateRequiredText(form.name)) {
             setError(ProductFormError.NAME_REQUIRED)
@@ -139,7 +153,7 @@ class ProductFormViewModel(
                 val updated = repository.updateProduct(product)
 
                 if (!updated) {
-                    setError(ProductFormError.PRODUCT_NOT_FOUND)
+                    resetForMissingProduct()
                     return
                 }
             } else {

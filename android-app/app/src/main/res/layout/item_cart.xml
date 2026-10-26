@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="#F3F4F6"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textCartProductName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#111827"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Classic Burger" />
+
+        <Button
+            android:id="@+id/buttonRemoveCartItem"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/remove_from_cart"
+            android:textAllCaps="false"
+            android:textColor="#111827" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textCartUnitPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#4B5563"
+        android:textSize="14sp"
+        tools:text="Unit price: CRC 3,000.00" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCartDecrease"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#E5E7EB"
+            android:contentDescription="@string/decrease_quantity"
+            android:gravity="center"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:text="@string/quantity_minus"
+            android:textAllCaps="false"
+            android:textColor="#111827"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textCartQuantity"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#111827"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="2" />
+
+        <Button
+            android:id="@+id/buttonCartIncrease"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#E5E7EB"
+            android:contentDescription="@string/increase_quantity"
+            android:gravity="center"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:text="@string/quantity_plus"
+            android:textAllCaps="false"
+            android:textColor="#111827"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textCartItemSubtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="end"
+        android:textColor="#111827"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Subtotal: CRC 6,000.00" />
+
+</LinearLayout>

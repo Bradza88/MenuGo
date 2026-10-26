@@ -30,4 +30,97 @@
         <item quantity="one">%1$d artículo en tu carrito</item>
         <item quantity="other">%1$d artículos en tu carrito</item>
     </plurals>
+
+    <string name="admin_title">Administración de productos</string>
+    <string name="add_product">Agregar producto</string>
+    <string name="edit_product">Editar producto</string>
+    <string name="delete_product">Eliminar producto</string>
+    <string name="product_name">Nombre del producto</string>
+    <string name="product_description">Descripción del producto</string>
+    <string name="product_price">Precio en colones</string>
+    <string name="product_image">Imagen del producto</string>
+    <string name="take_photo">Tomar foto</string>
+    <string name="choose_from_gallery">Elegir de la galería</string>
+    <string name="save_changes">Guardar cambios</string>
+    <string name="required_fields">* Campos obligatorios</string>
+    <string name="product_available">Disponible</string>
+    <string name="product_promotion">En promoción</string>
+
+    <string name="category_all">Todas las categorías</string>
+    <string name="category_hamburgers">Hamburguesas</string>
+    <string name="category_drinks">Bebidas</string>
+    <string name="category_desserts">Postres</string>
+    <string name="category_sides">Acompañamientos</string>
+
+    <string name="order_status_pending">Pendiente</string>
+    <string name="order_status_preparing">En preparación</string>
+    <string name="order_status_ready">Listo para retirar</string>
+    <string name="order_status_completed">Completado</string>
+    <string name="order_status_cancelled">Cancelado</string>
+
+    <string name="error_name_required">Ingresa el nombre del producto.</string>
+    <string name="error_description_required">Ingresa la descripción del producto.</string>
+    <string name="error_invalid_price">Ingresa un precio válido, no negativo y con un máximo de dos decimales.</string>
+    <string name="error_product_not_found">Producto no encontrado. Vuelve a cargarlo o inicia uno nuevo.</string>
+    <string name="error_product_unavailable">Este producto no está disponible.</string>
+    <string name="error_duplicate_product">Ya existe un producto con este identificador.</string>
+    <string name="error_invalid_quantity">La cantidad debe ser mayor que cero.</string>
+
+    <string name="error_load_products">No se pudieron cargar los productos. Inténtalo de nuevo.</string>
+    <string name="error_load_branches">No se pudieron cargar las sucursales. Inténtalo de nuevo.</string>
+    <string name="error_load_cart">No se pudo cargar el carrito. Inténtalo de nuevo.</string>
+    <string name="error_save_product">No se pudo guardar el producto.</string>
+    <string name="error_delete_product">No se pudo eliminar el producto.</string>
+    <string name="error_add_to_cart">No se pudo agregar el producto al carrito.</string>
+    <string name="error_update_cart">No se pudo actualizar la cantidad.</string>
+    <string name="error_remove_from_cart">No se pudo quitar el producto del carrito.</string>
+    <string name="error_clear_cart">No se pudo vaciar el carrito.</string>
+    <string name="error_branch_required">Selecciona una sucursal de retiro.</string>
+    <string name="error_invalid_branch">La sucursal seleccionada no está disponible.</string>
+    <string name="error_cart_empty">Tu carrito está vacío. Agrega un producto antes de confirmar.</string>
+    <string name="error_create_order">No se pudo confirmar el pedido.</string>
+
+    <string name="products_empty">Ningún producto coincide con tu búsqueda.</string>
+    <string name="branches_empty">No hay sucursales disponibles para retirar.</string>
+
+    <string name="home_pickup_subtitle">Retiro en sucursal</string>
+    <string name="home_admin">Administrar</string>
+    <string name="home_categories">Categorías</string>
+    <string name="home_daily_promotion">Promoción del día</string>
+    <string name="home_pickup_branch">Sucursal de retiro</string>
+    <string name="home_change_branch">Cambiar</string>
+    <string name="home_view_promotion">Ver promoción</string>
+    <string name="home_no_promotion">No hay promociones disponibles en este momento.</string>
+
+    <string name="catalog_title">Catálogo de productos</string>
+    <string name="view_product">Ver producto</string>
+
+    <plurals name="catalog_product_count">
+        <item quantity="one">%1$d producto</item>
+        <item quantity="other">%1$d productos</item>
+    </plurals>
+
+    <string name="filter_title">Filtrar productos</string>
+    <string name="filter_price_range">Rango de precio en colones (CRC)</string>
+    <string name="error_price_range">El precio máximo debe ser mayor o igual que el precio mínimo.</string>
+
+    <string name="pickup_note_title">Información de retiro</string>
+    <string name="pickup_note_description">Paga en efectivo o con tarjeta física en la sucursal al retirar tu pedido.</string>
+    <string name="decrease_quantity">Disminuir cantidad</string>
+    <string name="increase_quantity">Aumentar cantidad</string>
+    <string name="subtotal_amount">Subtotal: %1$s</string>
+    <string name="add_to_cart_amount">Agregar al carrito (%1$s)</string>
+    <string name="product_added_to_cart">Producto agregado al carrito.</string>
+
+    <string name="cart_title">Tu carrito</string>
+    <string name="cart_empty">Tu carrito está vacío. Explora el menú para agregar productos.</string>
+    <string name="remove_from_cart">Quitar</string>
+    <string name="unit_price_amount">Precio unitario: %1$s</string>
+    <string name="cart_payment">Pago</string>
+    <string name="cart_payment_pickup">Al retirar</string>
+    <string name="cart_mode">Modalidad</string>
+    <string name="cart_mode_pickup">Retiro</string>
+    <string name="cart_total">Total a pagar en sucursal</string>
+    <string name="review_order">Revisar pedido</string>
+
 </resources>

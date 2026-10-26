@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3F4F6"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/buttonNavHome"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:minWidth="0dp"
+        android:minHeight="56dp"
+        android:padding="2dp"
+        android:text="@string/nav_home"
+        android:textAllCaps="false"
+        android:textColor="#111827"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttonNavMenu"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:minWidth="0dp"
+        android:minHeight="56dp"
+        android:padding="2dp"
+        android:text="@string/nav_menu"
+        android:textAllCaps="false"
+        android:textColor="#111827"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttonNavCart"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:minWidth="0dp"
+        android:minHeight="56dp"
+        android:padding="2dp"
+        android:text="@string/nav_cart"
+        android:textAllCaps="false"
+        android:textColor="#111827"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttonNavBranches"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:minWidth="0dp"
+        android:minHeight="56dp"
+        android:padding="2dp"
+        android:text="@string/nav_branches"
+        android:textAllCaps="false"
+        android:textColor="#111827"
+        android:textSize="12sp" />
+
+</LinearLayout>
