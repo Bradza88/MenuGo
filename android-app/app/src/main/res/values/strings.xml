@@ -32,4 +32,99 @@
         <item quantity="one">%1$d item in your cart</item>
         <item quantity="other">%1$d items in your cart</item>
     </plurals>
+
+    <string name="admin_title">Product administration</string>
+    <string name="add_product">Add product</string>
+    <string name="edit_product">Edit product</string>
+    <string name="delete_product">Delete product</string>
+    <string name="product_name">Product name</string>
+    <string name="product_description">Product description</string>
+    <string name="product_price">Price in colones</string>
+    <string name="product_image">Product image</string>
+    <string name="take_photo">Take photo</string>
+    <string name="choose_from_gallery">Choose from gallery</string>
+    <string name="save_changes">Save changes</string>
+    <string name="required_fields">* Required fields</string>
+    <string name="product_available">Available</string>
+    <string name="product_promotion">On promotion</string>
+
+    <string name="category_all">All categories</string>
+    <string name="category_hamburgers">Hamburgers</string>
+    <string name="category_drinks">Drinks</string>
+    <string name="category_desserts">Desserts</string>
+    <string name="category_sides">Sides</string>
+
+    <string name="order_status_pending">Pending</string>
+    <string name="order_status_preparing">Preparing</string>
+    <string name="order_status_ready">Ready for pickup</string>
+    <string name="order_status_completed">Completed</string>
+    <string name="order_status_cancelled">Cancelled</string>
+
+    <string name="error_name_required">Enter the product name.</string>
+    <string name="error_description_required">Enter the product description.</string>
+    <string name="error_invalid_price">Enter a valid nonnegative price with at most two decimal places.</string>
+    <string name="error_product_not_found">Product not found. Reload the product or start a new one.</string>
+    <string name="error_product_unavailable">This product is not available.</string>
+    <string name="error_duplicate_product">A product with this ID already exists.</string>
+    <string name="error_invalid_quantity">Quantity must be greater than zero.</string>
+
+    <string name="error_load_products">Unable to load products. Try again.</string>
+    <string name="error_load_branches">Unable to load branches. Try again.</string>
+    <string name="error_load_cart">Unable to load the cart. Try again.</string>
+    <string name="error_save_product">Unable to save the product.</string>
+    <string name="error_delete_product">Unable to delete the product.</string>
+    <string name="error_add_to_cart">Unable to add the product to the cart.</string>
+    <string name="error_update_cart">Unable to update the quantity.</string>
+    <string name="error_remove_from_cart">Unable to remove the product from the cart.</string>
+    <string name="error_clear_cart">Unable to clear the cart.</string>
+    <string name="error_branch_required">Select a pickup branch.</string>
+    <string name="error_invalid_branch">The selected branch is not available.</string>
+    <string name="error_cart_empty">Your cart is empty. Add a product before confirming.</string>
+    <string name="error_create_order">Unable to confirm the order.</string>
+
+    <string name="products_empty">No products match your search.</string>
+    <string name="branches_empty">No pickup branches are available.</string>
+
+    <string name="home_pickup_subtitle">Pickup at a branch</string>
+    <string name="home_admin">Admin</string>
+    <string name="home_categories">Categories</string>
+    <string name="home_daily_promotion">Daily promotion</string>
+    <string name="home_pickup_branch">Pickup branch</string>
+    <string name="home_change_branch">Change</string>
+    <string name="home_view_promotion">View promotion</string>
+    <string name="home_no_promotion">No promotions available right now.</string>
+
+    <string name="catalog_title">Product catalog</string>
+    <string name="view_product">View product</string>
+
+    <plurals name="catalog_product_count">
+        <item quantity="one">%1$d product</item>
+        <item quantity="other">%1$d products</item>
+    </plurals>
+
+    <string name="filter_title">Filter products</string>
+    <string name="filter_price_range">Price range in colones (CRC)</string>
+    <string name="error_price_range">Maximum price must be greater than or equal to minimum price.</string>
+
+    <string name="pickup_note_title">Pickup information</string>
+    <string name="pickup_note_description">Pay with cash or a physical card at the branch when picking up your order.</string>
+    <string name="decrease_quantity">Decrease quantity</string>
+    <string name="increase_quantity">Increase quantity</string>
+    <string name="subtotal_amount">Subtotal: %1$s</string>
+    <string name="add_to_cart_amount">Add to cart (%1$s)</string>
+    <string name="product_added_to_cart">Product added to your cart.</string>
+    <string name="quantity_minus" translatable="false">−</string>
+    <string name="quantity_plus" translatable="false">+</string>
+
+    <string name="cart_title">Your cart</string>
+    <string name="cart_empty">Your cart is empty. Explore the menu to add products.</string>
+    <string name="remove_from_cart">Remove</string>
+    <string name="unit_price_amount">Unit price: %1$s</string>
+    <string name="cart_payment">Payment</string>
+    <string name="cart_payment_pickup">At pickup</string>
+    <string name="cart_mode">Order type</string>
+    <string name="cart_mode_pickup">Pickup</string>
+    <string name="cart_total">Total to pay at the branch</string>
+    <string name="review_order">Review order</string>
+
 </resources>

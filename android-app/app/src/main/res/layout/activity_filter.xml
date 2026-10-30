@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".ui.activity.FilterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:accessibilityHeading="true"
+                android:text="@string/filter_title"
+                android:textColor="#111827"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Category -->
+            <TextView
+                android:id="@+id/labelCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:accessibilityHeading="true"
+                android:text="@string/category"
+                android:textColor="#111827"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/groupCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:checkedButton="@id/radioAll"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#374151"
+                    android:minHeight="48dp"
+                    android:text="@string/category_all"
+                    android:textColor="#111827"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioHamburgers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#374151"
+                    android:minHeight="48dp"
+                    android:text="@string/category_hamburgers"
+                    android:textColor="#111827"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioDrinks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#374151"
+                    android:minHeight="48dp"
+                    android:text="@string/category_drinks"
+                    android:textColor="#111827"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioDesserts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#374151"
+                    android:minHeight="48dp"
+                    android:text="@string/category_desserts"
+                    android:textColor="#111827"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioSides"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#374151"
+                    android:minHeight="48dp"
+                    android:text="@string/category_sides"
+                    android:textColor="#111827"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <!-- Price range -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:accessibilityHeading="true"
+                android:text="@string/filter_price_range"
+                android:textColor="#111827"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/editMinPrice"
+                        android:text="@string/min_price"
+                        android:textColor="#4B5563"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editMinPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#6B7280"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:minHeight="48dp"
+                        android:padding="8dp"
+                        android:textColor="#111827"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/editMaxPrice"
+                        android:text="@string/max_price"
+                        android:textColor="#4B5563"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editMaxPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#6B7280"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:minHeight="48dp"
+                        android:padding="8dp"
+                        android:textColor="#111827"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Promotions -->
+            <CheckBox
+                android:id="@+id/checkOnlyPromotions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:buttonTint="#374151"
+                android:minHeight="48dp"
+                android:text="@string/only_promotions"
+                android:textColor="#111827"
+                android:textSize="16sp" />
+
+            <!-- Actions -->
+            <Button
+                android:id="@+id/buttonApplyFilters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#374151"
+                android:minHeight="48dp"
+                android:text="@string/apply_filters"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/buttonClearFilters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#E5E7EB"
+                android:minHeight="48dp"
+                android:text="@string/clear_filters"
+                android:textAllCaps="false"
+                android:textColor="#111827" />
+
+            <Button
+                android:id="@+id/buttonCancelFilters"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minHeight="48dp"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="#111827" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
