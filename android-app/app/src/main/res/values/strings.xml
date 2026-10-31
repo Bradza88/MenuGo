@@ -127,4 +127,87 @@
     <string name="cart_total">Total to pay at the branch</string>
     <string name="review_order">Review order</string>
 
+    <string name="branches_title">Available Branches</string>
+    <string name="branches_count">2 branches</string>
+    <string name="branches_map_illustrative">Illustrative map</string>
+    <string name="branch_centro_name">MenuGo Centro</string>
+    <string name="branch_norte_name">MenuGo Norte</string>
+    <string name="branch_active">Active</string>
+    <string name="branch_example_label">Branch</string>
+    <string name="branch_example_address">Example address - Downtown</string>
+    <string name="branch_example_norte_address">Example address - North area</string>
+    <string name="branch_example_hours">Opening hours: 9:00 AM - 9:00 PM</string>
+    <string name="branch_example_norte_hours">Opening hours: 8:00 AM - 8:00 PM</string>
+    <string name="branch_select">Select branch</string>
+    <string name="branch_screen_footer">06 - BRANCHES</string>
+
+    <string name="admin_example_time">09:41</string>
+    <string name="admin_mode">ADMIN MODE</string>
+    <string name="admin_panel_title">Administration Panel</string>
+    <string name="admin_catalog_subtitle">Catalog Management</string>
+    <string name="admin_add_product">+ Add</string>
+    <string name="admin_search_hint">Search inventory...</string>
+    <string name="admin_image_placeholder">×</string>
+    <string name="admin_product_classic">Classic Burger</string>
+    <string name="admin_classic_details">CRC 3,000 · Burgers</string>
+    <string name="admin_product_bbq">BBQ Bacon Burger</string>
+    <string name="admin_bbq_details">CRC 3,800 · Burgers</string>
+    <string name="admin_product_fries">Supreme Fries</string>
+    <string name="admin_fries_details">CRC 1,800 · Sides</string>
+    <string name="admin_product_soda">Medium Soda 500ml</string>
+    <string name="admin_soda_details">CRC 1,200 · Drinks</string>
+    <string name="admin_edit">Edit</string>
+    <string name="admin_delete">Delete</string>
+    <string name="admin_footer_label">Administrator</string>
+    <string name="admin_back_to_customer">Back to Customer App</string>
+
+    <string name="product_form_time">09:41</string>
+    <string name="product_form_admin_mode">ADMIN MODE</string>
+    <string name="product_form_title">Add / edit product</string>
+    <string name="product_form_close">×</string>
+    <string name="product_form_image_placeholder">×</string>
+    <string name="product_form_take_photo">Take photo</string>
+    <string name="product_form_open_gallery">Open gallery</string>
+    <string name="product_form_name_label">Product name *</string>
+    <string name="product_form_name_hint">Classic Burger</string>
+    <string name="product_form_description_label">Description</string>
+    <string name="product_form_description_hint">150g grilled beef with cheddar cheese, lettuce, tomato and special sauce.</string>
+    <string name="product_form_price_label">Price (CRC) *</string>
+    <string name="product_form_price_hint">3000</string>
+    <string name="product_form_category_label">Category *</string>
+    <string name="product_form_category_description">Product category</string>
+    <string name="product_form_save">Save Changes</string>
+    <string name="product_form_cancel">Cancel</string>
+    <string name="product_form_required_fields">* Required fields</string>
+    <string-array name="product_form_categories">
+        <item>Burgers</item>
+        <item>Drinks</item>
+        <item>Desserts</item>
+        <item>Sides</item>
+    </string-array>
+
+    <string name="order_final_step">Final Step</string>
+    <string name="order_confirm_title">Confirm Pickup Order</string>
+    <string name="order_products">Products:</string>
+    <string name="order_example_product">2× Classic Burger</string>
+    <string name="order_total">Total Amount:</string>
+    <string name="order_example_total">CRC 6,000</string>
+    <string name="order_branch">Branch:</string>
+    <string name="order_example_branch">MenuGo Center</string>
+    <string name="order_payment_method">Payment Method:</string>
+    <string name="order_pay_at_pickup">Pay at pickup</string>
+    <string name="order_notice_label">Notice:</string>
+    <string name="order_notice_message">The order is paid at pickup. Pickup time is confirmed at the counter.</string>
+    <string name="order_confirm_button">Confirm Order</string>
+    <string name="order_back_to_cart">Back to Cart</string>
+
+    <string name="delete_admin_attention">Attention Administrator!</string>
+    <string name="delete_product_title">Delete Product?</string>
+    <string name="delete_selected_item">Selected item:</string>
+    <string name="delete_example_product">BBQ Bacon Burger</string>
+    <string name="delete_example_price">Price: CRC 3,800</string>
+    <string name="delete_warning_label">Warning:</string>
+    <string name="delete_warning_message">This action is irreversible. The product will immediately disappear from the public catalog in all branches.</string>
+    <string name="delete_confirm_button">Delete Product</string>
+    <string name="delete_cancel_button">Cancel and Return</string>
 </resources>

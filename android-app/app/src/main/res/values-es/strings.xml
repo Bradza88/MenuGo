@@ -112,6 +112,65 @@
     <string name="add_to_cart_amount">Agregar al carrito (%1$s)</string>
     <string name="product_added_to_cart">Producto agregado al carrito.</string>
 
+    <string name="branches_title">Sucursales Disponibles</string>
+    <string name="branches_count">2 sucursales</string>
+    <string name="branches_map_illustrative">Mapa ilustrativo</string>
+    <string name="branch_centro_name">MenuGo Centro</string>
+    <string name="branch_norte_name">MenuGo Norte</string>
+    <string name="branch_active">Activa</string>
+    <string name="branch_example_label">Sucursal</string>
+    <string name="branch_example_address">Dirección de ejemplo - Centro</string>
+    <string name="branch_example_norte_address">Dirección de ejemplo - Zona Norte</string>
+    <string name="branch_example_hours">Horario: 9:00 a. m. - 9:00 p. m.</string>
+    <string name="branch_example_norte_hours">Horario: 8:00 a. m. - 8:00 p. m.</string>
+    <string name="branch_select">Seleccionar sucursal</string>
+    <string name="branch_screen_footer">06 - SUCURSALES</string>
+
+    <string name="admin_example_time">09:41</string>
+    <string name="admin_mode">MODO ADMIN</string>
+    <string name="admin_panel_title">Panel de Administración</string>
+    <string name="admin_catalog_subtitle">Gestión de Catálogo</string>
+    <string name="admin_add_product">+ Agregar</string>
+    <string name="admin_search_hint">Buscar en inventario...</string>
+    <string name="admin_image_placeholder">×</string>
+    <string name="admin_product_classic">Hamburguesa Clásica</string>
+    <string name="admin_classic_details">CRC 3.000 · Hamburguesas</string>
+    <string name="admin_product_bbq">Hamburguesa BBQ Bacon</string>
+    <string name="admin_bbq_details">CRC 3.800 · Hamburguesas</string>
+    <string name="admin_product_fries">Papas Supremas</string>
+    <string name="admin_fries_details">CRC 1.800 · Acompañamientos</string>
+    <string name="admin_product_soda">Gaseosa Mediana 500ml</string>
+    <string name="admin_soda_details">CRC 1.200 · Bebidas</string>
+    <string name="admin_edit">Editar</string>
+    <string name="admin_delete">Eliminar</string>
+    <string name="admin_footer_label">Administrador</string>
+    <string name="admin_back_to_customer">Volver a App Cliente</string>
+
+    <string name="product_form_time">09:41</string>
+    <string name="product_form_admin_mode">MODO ADMIN</string>
+    <string name="product_form_title">Agregar / editar producto</string>
+    <string name="product_form_close">×</string>
+    <string name="product_form_image_placeholder">×</string>
+    <string name="product_form_take_photo">Tomar foto</string>
+    <string name="product_form_open_gallery">Abrir galería</string>
+    <string name="product_form_name_label">Nombre del producto *</string>
+    <string name="product_form_name_hint">Hamburguesa Clásica</string>
+    <string name="product_form_description_label">Descripción</string>
+    <string name="product_form_description_hint">Carne de 150g a la parrilla con queso cheddar, lechuga, tomate y salsa especial.</string>
+    <string name="product_form_price_label">Precio (CRC) *</string>
+    <string name="product_form_price_hint">3000</string>
+    <string name="product_form_category_label">Categoría *</string>
+    <string name="product_form_category_description">Categoría del producto</string>
+    <string name="product_form_save">Guardar Cambios</string>
+    <string name="product_form_cancel">Cancelar</string>
+    <string name="product_form_required_fields">* Campos obligatorios</string>
+    <string-array name="product_form_categories">
+        <item>Hamburguesas</item>
+        <item>Bebidas</item>
+        <item>Postres</item>
+        <item>Acompañamientos</item>
+    </string-array>
+
     <string name="cart_title">Tu carrito</string>
     <string name="cart_empty">Tu carrito está vacío. Explora el menú para agregar productos.</string>
     <string name="remove_from_cart">Quitar</string>
@@ -122,5 +181,28 @@
     <string name="cart_mode_pickup">Retiro</string>
     <string name="cart_total">Total a pagar en sucursal</string>
     <string name="review_order">Revisar pedido</string>
+    <string name="order_final_step">Final Paso</string>
+    <string name="order_confirm_title">Confimar Orden</string>
+    <string name="order_products">Productos:</string>
+    <string name="order_example_product">2× Hamburguesa Clásica</string>
+    <string name="order_total">Monto Total:</string>
+    <string name="order_example_total">CRC 6,000</string>
+    <string name="order_branch">Sucursal:</string>
+    <string name="order_example_branch">MenuGo Centro</string>
+    <string name="order_payment_method">Modalidad:</string>
+    <string name="order_pay_at_pickup">Pago directo al retirar</string>
+    <string name="order_notice_label">Aviso:</string>
+    <string name="order_notice_message">El pedido se paga al retirar. El tiempo de retiro se confirma en caja.</string>
+    <string name="order_confirm_button">Confirmar Pedido</string>
+    <string name="order_back_to_cart">Volver al Carrito</string>
 
+    <string name="delete_admin_attention">¡Atención Administrador!</string>
+    <string name="delete_product_title">¿Eliminar Producto?</string>
+    <string name="delete_selected_item">Elemento seleccionado:</string>
+    <string name="delete_example_product">Hamburguesa BBQ Bacon</string>
+    <string name="delete_example_price">Precio: CRC 3.800</string>
+    <string name="delete_warning_label">Advertencia:</string>
+    <string name="delete_warning_message">Esta acción es irreversible. El producto desaparecerá inmediatamente del catálogo público en todas las sucursales.</string>
+    <string name="delete_confirm_button">Eliminar Producto</string>
+    <string name="delete_cancel_button">Cancelar y Volver</string>
 </resources>
