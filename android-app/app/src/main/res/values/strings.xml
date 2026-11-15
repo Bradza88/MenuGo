@@ -210,4 +210,9 @@
     <string name="delete_warning_message">This action is irreversible. The product will immediately disappear from the public catalog in all branches.</string>
     <string name="delete_confirm_button">Delete Product</string>
     <string name="delete_cancel_button">Cancel and Return</string>
+
+    <string name="update_title">Update Product?</string>
+    <string name="update_message">Are you sure you want to save these changes?</string>
+    <string name="update_button">Save Changes</string>
+    <string name="cancel_button">Cancel</string>
 </resources>

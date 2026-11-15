@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.menugo.data.memory.RepositoryProvider
 import com.example.menugo.domain.repository.MenuGoRepository
+import kotlin.jvm.java
 
 class MenuGoViewModelFactory(
     private val repository: MenuGoRepository = RepositoryProvider.repository
