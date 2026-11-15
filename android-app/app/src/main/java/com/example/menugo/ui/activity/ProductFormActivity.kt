@@ -20,6 +20,7 @@ import com.example.menugo.util.NavigationKeys
 import com.example.menugo.viewmodel.MenuGoViewModelFactory
 import com.example.menugo.viewmodel.ProductFormError
 import com.example.menugo.viewmodel.ProductFormViewModel
+import androidx.appcompat.app.AlertDialog
 
 class ProductFormActivity : AppCompatActivity() {
 
@@ -29,6 +30,19 @@ class ProductFormActivity : AppCompatActivity() {
     private lateinit var descriptionField: EditText
     private lateinit var priceField: EditText
     private lateinit var categorySpinner: Spinner
+
+    private fun showUpdateConfirmation() {
+        AlertDialog.Builder(this)
+            .setTitle(R.string.update_title)
+            .setMessage(R.string.update_message)
+            .setPositiveButton(R.string.update_button) { _, _ ->
+                saveProduct()
+            }
+            .setNegativeButton(R.string.cancel_button) { dialog, _ ->
+                dialog.dismiss()
+            }
+            .show()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,8 +78,13 @@ class ProductFormActivity : AppCompatActivity() {
         showCurrentProduct()
         connectFieldChanges()
 
+
         findViewById<Button>(R.id.buttonSaveProduct).setOnClickListener {
-            saveProduct()
+            if (viewModel.uiState.value.isEditing) {
+                showUpdateConfirmation()
+            } else {
+                saveProduct()
+            }
         }
 
         findViewById<Button>(R.id.buttonCancelProduct).setOnClickListener {

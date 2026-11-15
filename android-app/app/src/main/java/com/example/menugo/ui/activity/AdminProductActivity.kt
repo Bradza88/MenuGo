@@ -23,6 +23,9 @@ import com.example.menugo.util.NavigationKeys
 import com.example.menugo.viewmodel.AdminProductError
 import com.example.menugo.viewmodel.AdminProductViewModel
 import com.example.menugo.viewmodel.MenuGoViewModelFactory
+import kotlin.jvm.java
+import androidx.appcompat.app.AlertDialog
+import android.view.LayoutInflater
 
 class AdminProductActivity : AppCompatActivity() {
 
@@ -124,15 +127,56 @@ class AdminProductActivity : AppCompatActivity() {
         val deleteButton = Button(this).apply {
             text = getString(R.string.admin_delete)
             isAllCaps = false
+
             setOnClickListener {
-                viewModel.deleteProduct(product.id)
-                renderProducts()
-                showViewModelError()
+                showDeleteConfirmation(product)
             }
         }
         row.addView(deleteButton)
 
         return row
+    }
+
+    private fun showDeleteConfirmation(product: Product) {
+
+        val dialogView = LayoutInflater.from(this)
+            .inflate(R.layout.dialog_delete_product, null)
+
+        val dialog = AlertDialog.Builder(this)
+            .setView(dialogView)
+            .create()
+
+        val productName = dialogView.findViewById<TextView>(
+            R.id.textDeleteProductName
+        )
+
+        val productPrice = dialogView.findViewById<TextView>(
+            R.id.textDeleteProductPrice
+        )
+
+        val confirmButton = dialogView.findViewById<Button>(
+            R.id.buttonDeleteProduct
+        )
+
+        val cancelButton = dialogView.findViewById<Button>(
+            R.id.buttonCancelDelete
+        )
+
+        productName.text = product.name
+        productPrice.text = MoneyFormatter.format(product.priceInCents)
+
+        confirmButton.setOnClickListener {
+            viewModel.deleteProduct(product.id)
+            renderProducts()
+            showViewModelError()
+            dialog.dismiss()
+        }
+
+        cancelButton.setOnClickListener {
+            dialog.dismiss()
+        }
+
+        dialog.show()
     }
 
     private fun openProductForm(productId: String? = null) {
