@@ -205,4 +205,9 @@
     <string name="delete_warning_message">Esta acción es irreversible. El producto desaparecerá inmediatamente del catálogo público en todas las sucursales.</string>
     <string name="delete_confirm_button">Eliminar Producto</string>
     <string name="delete_cancel_button">Cancelar y Volver</string>
+
+    <string name="update_title">¿Actualizar producto?</string>
+    <string name="update_message">¿Estás seguro de que deseas guardar estos cambios?</string>
+    <string name="update_button">Guardar cambios</string>
+    <string name="cancel_button">Cancelar</string>
 </resources>

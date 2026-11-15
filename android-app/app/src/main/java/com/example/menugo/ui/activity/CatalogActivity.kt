@@ -28,6 +28,7 @@ import com.example.menugo.viewmodel.CatalogViewModel
 import com.example.menugo.viewmodel.MenuGoViewModelFactory
 import kotlinx.coroutines.launch
 import androidx.activity.result.contract.ActivityResultContracts
+import kotlin.jvm.java
 
 class CatalogActivity : AppCompatActivity() {
 
